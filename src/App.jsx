@@ -208,8 +208,8 @@ export default function App() {
             {/* ─── Welcome ─── */}
             {view === VIEWS.WELCOME && (
                 <div className="welcome fade-in" id="welcome">
-                    <div className="welcome-icon">💃</div>
-                    <h1 className="welcome-title">DanceCoach AI</h1>
+                    <img src={logoImg} alt="Improved.ai" className="welcome-logo" />
+                    <h1 className="welcome-title">Improved.ai</h1>
                     <p className="welcome-sub">
                         See yourself dance better — in real time. Upload any dance video, and our AI will
                         compare your movements body-part by body-part, showing you exactly where to improve.
