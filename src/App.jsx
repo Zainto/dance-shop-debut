@@ -208,14 +208,26 @@ export default function App() {
             {/* ─── Welcome ─── */}
             {view === VIEWS.WELCOME && (
                 <div className="welcome fade-in" id="welcome">
-                    <img src={logoImg} alt="Improved.ai" className="welcome-logo" />
-                    <DancingSkeleton size={180} />
-                    <h1 className="welcome-title" style={{ marginTop: '16px' }}>Improved.ai</h1>
+                    <div className="hero-pill">
+                        <span className="hero-pill-icon">⚡</span>
+                        AI-Powered Movement Analysis
+                    </div>
+                    <h1 className="welcome-title">
+                        Master any movement <em style={{ fontStyle: 'italic', color: 'var(--accent-1)' }}>with</em>
+                        <br />
+                        <span style={{ color: 'var(--accent-1)' }}>AI precision</span>
+                    </h1>
                     <p className="welcome-sub">
-                        See yourself dance better — in real time. Upload any dance video, and our AI will
-                        compare your movements body-part by body-part, showing you exactly where to improve.
-                        No app install needed, all AI runs in your browser.
+                        Compare your form against any reference video in real time.
+                        <br />
+                        Get instant, body-part-level feedback — all in your browser.
                     </p>
+
+                    <div className="skeleton-trio">
+                        <DancingSkeleton size={140} />
+                        <DancingSkeleton size={180} />
+                        <DancingSkeleton size={140} />
+                    </div>
 
                     <div className="features">
                         <div className="card feature">
