@@ -1,4 +1,4 @@
-# 💃 DanceCoach AI
+# 💃 Improved.ai
 
 **See yourself dance better — in real time.**
 
