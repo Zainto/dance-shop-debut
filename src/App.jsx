@@ -191,7 +191,7 @@ export default function App() {
             {/* Header */}
             <header className="app-header">
                 <div className="logo">
-                    <img src={logoImg} alt="Improved.ai" className="logo-img" />
+                    <span className="logo-text">Improved.ai</span>
                 </div>
                 <nav className="nav">
                     <button
