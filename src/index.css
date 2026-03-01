@@ -187,12 +187,12 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.2; letter-spacing: -0.
 }
 
 .btn-primary {
-  background: var(--accent-1);
+  background: var(--gradient-brand);
   color: white;
   box-shadow: var(--shadow-glow);
 }
 
-.btn-primary:hover { transform: translateY(-1px); background: var(--accent-2); box-shadow: 0 0 40px rgba(230,34,34,0.25); }
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 0 40px rgba(168,85,247,0.35); }
 
 .btn-danger { background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.3); }
 .btn-danger:hover { transform: translateY(-1px); background: rgba(239, 68, 68, 0.25); }
