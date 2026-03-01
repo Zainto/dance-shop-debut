@@ -231,17 +231,30 @@ export default function App() {
 
                     <div className="features">
                         <div className="card feature">
-                            <div className="feature-icon">🎯</div>
+                            <div className="feature-icon-svg">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="var(--accent-1)" strokeWidth="2"/><path d="M16 8v8l5.5 3" stroke="var(--accent-1)" strokeWidth="2" strokeLinecap="round"/></svg>
+                            </div>
+                            <div className="feature-title">Real-Time Analysis</div>
+                            <div className="feature-desc">Live side-by-side comparison at 20+ FPS with color-coded skeleton overlay</div>
+                        </div>
+                        <div className="card feature">
+                            <div className="feature-icon-svg">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="var(--accent-1)" strokeWidth="2"/><circle cx="16" cy="16" r="4" fill="var(--accent-1)"/><path d="M8 12h4M20 12h4M10 22h12" stroke="var(--accent-1)" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                            </div>
                             <div className="feature-title">Body-Part Scoring</div>
                             <div className="feature-desc">See exactly which limbs match and which need work — arms, legs, torso, head</div>
                         </div>
                         <div className="card feature">
-                            <div className="feature-icon">⚡</div>
-                            <div className="feature-title">Real-Time Feedback</div>
-                            <div className="feature-desc">Live side-by-side comparison at 20+ FPS with color-coded skeleton</div>
+                            <div className="feature-icon-svg">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4l3 6h7l-5.5 4.5 2 7L16 17l-6.5 4.5 2-7L6 10h7z" stroke="var(--accent-1)" strokeWidth="2" strokeLinejoin="round"/></svg>
+                            </div>
+                            <div className="feature-title">AI Coaching</div>
+                            <div className="feature-desc">Get personalized feedback and corrections powered by advanced AI models</div>
                         </div>
                         <div className="card feature">
-                            <div className="feature-icon">🔒</div>
+                            <div className="feature-icon-svg">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="6" y="4" width="20" height="24" rx="3" stroke="var(--accent-1)" strokeWidth="2"/><path d="M12 12h8M12 16h8M12 20h5" stroke="var(--accent-1)" strokeWidth="1.5" strokeLinecap="round"/><circle cx="22" cy="22" r="6" fill="white" stroke="var(--accent-1)" strokeWidth="2"/><path d="M20 22l1.5 1.5L24 20" stroke="var(--accent-1)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                            </div>
                             <div className="feature-title">Privacy First</div>
                             <div className="feature-desc">All AI runs in your browser — your video never leaves your device</div>
                         </div>
@@ -257,7 +270,7 @@ export default function App() {
                         id="upload-zone"
                     >
                         <div className="upload-icon">📁</div>
-                        <div className="upload-text">Drop a dance video here</div>
+                        <div className="upload-text">Drop a reference video here</div>
                         <div className="upload-hint">or click to browse • MP4, MOV, WebM</div>
                         <input
                             id="file-input"
@@ -268,18 +281,23 @@ export default function App() {
                         />
                     </div>
 
-                    <div style={{
-                        marginTop: '40px',
-                        display: 'flex',
-                        gap: '28px',
-                        fontSize: '13px',
-                        color: 'var(--text-muted)',
-                        flexWrap: 'wrap',
-                        justifyContent: 'center'
-                    }}>
-                        <div>🆓 100% free to use</div>
-                        <div>📷 Just a webcam needed</div>
-                        <div>🧠 33-point body tracking</div>
+                    {/* Applications */}
+                    <div className="applications-section">
+                        <div className="applications-label">Applications</div>
+                        <div className="applications-list">
+                            <div className="application-tag">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-1)" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="5" r="3"/><path d="M12 8v5M8 20l4-7 4 7M6 13h12"/></svg>
+                                Sports
+                            </div>
+                            <div className="application-tag">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-1)" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="4" r="2.5"/><path d="M12 6.5v4M9 20l3-5 3 5M7 12c1-1 3-2 5-1s4 0 5 1"/></svg>
+                                Dancing
+                            </div>
+                            <div className="application-tag">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-1)" strokeWidth="2" strokeLinecap="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3" fill="none"/><circle cx="18" cy="16" r="3" fill="none"/></svg>
+                                Music
+                            </div>
+                        </div>
                     </div>
                 </div>
             )}
