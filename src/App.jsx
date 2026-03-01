@@ -190,11 +190,7 @@ export default function App() {
             {/* Header */}
             <header className="app-header">
                 <div className="logo">
-                    <div className="logo-icon">💃</div>
-                    <div>
-                        <div className="logo-text">DanceCoach AI</div>
-                        <div className="logo-tag">Real-Time Dance Feedback</div>
-                    </div>
+                    <img src={logoImg} alt="Improved.ai" className="logo-img" />
                 </div>
                 <nav className="nav">
                     <button
