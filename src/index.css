@@ -588,13 +588,115 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.2; letter-spacing: -0.
 /* ─── Animations ─── */
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 @keyframes spin { to { transform: rotate(360deg); } }
-@keyframes dance {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  25% { transform: translateY(-8px) rotate(-5deg); }
-  75% { transform: translateY(-4px) rotate(5deg); }
-}
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 .fade-in { animation: fadeIn 0.4s ease forwards; }
+
+/* ─── Dancing Skeleton Animations ─── */
+.dancing-skeleton { animation: skel-bounce 1.6s ease-in-out infinite; }
+
+@keyframes skel-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Left arm dance */
+.skel-left-upper-arm {
+  transform-origin: 100px 58px;
+  animation: left-upper-arm-dance 1.6s ease-in-out infinite;
+}
+.skel-left-forearm {
+  transform-origin: 70px 78px;
+  animation: left-forearm-dance 1.6s ease-in-out infinite;
+}
+
+@keyframes left-upper-arm-dance {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-35deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(-50deg); }
+}
+@keyframes left-forearm-dance {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-20deg); }
+  50% { transform: rotate(15deg); }
+  75% { transform: rotate(-30deg); }
+}
+
+/* Right arm dance */
+.skel-right-upper-arm {
+  transform-origin: 100px 58px;
+  animation: right-upper-arm-dance 1.6s ease-in-out infinite;
+}
+.skel-right-forearm {
+  transform-origin: 130px 78px;
+  animation: right-forearm-dance 1.6s ease-in-out infinite;
+}
+
+@keyframes right-upper-arm-dance {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(30deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(45deg); }
+}
+@keyframes right-forearm-dance {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(25deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(35deg); }
+}
+
+/* Left leg dance */
+.skel-left-thigh {
+  transform-origin: 100px 110px;
+  animation: left-thigh-dance 1.6s ease-in-out infinite;
+}
+.skel-left-shin {
+  transform-origin: 75px 145px;
+  animation: left-shin-dance 1.6s ease-in-out infinite;
+}
+
+@keyframes left-thigh-dance {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  75% { transform: rotate(-15deg); }
+}
+@keyframes left-shin-dance {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(12deg); }
+}
+
+/* Right leg dance */
+.skel-right-thigh {
+  transform-origin: 100px 110px;
+  animation: right-thigh-dance 1.6s ease-in-out infinite;
+}
+.skel-right-shin {
+  transform-origin: 125px 145px;
+  animation: right-shin-dance 1.6s ease-in-out infinite;
+}
+
+@keyframes right-thigh-dance {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-12deg); }
+  75% { transform: rotate(10deg); }
+}
+@keyframes right-shin-dance {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(8deg); }
+  75% { transform: rotate(-10deg); }
+}
+
+/* Head bob */
+.skel-head {
+  transform-origin: 100px 30px;
+  animation: head-bob 1.6s ease-in-out infinite;
+}
+@keyframes head-bob {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  75% { transform: translateX(3px); }
+}
 
 /* ─── Responsive ─── */
 @media (max-width: 1024px) {

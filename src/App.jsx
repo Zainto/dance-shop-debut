@@ -8,6 +8,7 @@ import { comparePoses } from './utils/poseSimilarity';
 import { generateVoiceCue, setAudioCoachEnabled, resetAudioCoach, initVoices } from './utils/audioCoach';
 import { startRecording, stopRecording, clearRecording } from './utils/sessionRecorder';
 import logoImg from './assets/logo.jpg';
+import DancingSkeleton from './components/DancingSkeleton';
 
 const VIEWS = { WELCOME: 'welcome', PRACTICE: 'practice', SUMMARY: 'summary' };
 
