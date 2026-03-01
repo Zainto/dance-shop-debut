@@ -7,7 +7,7 @@ import SessionSummary from './components/SessionSummary';
 import { comparePoses } from './utils/poseSimilarity';
 import { generateVoiceCue, setAudioCoachEnabled, resetAudioCoach, initVoices } from './utils/audioCoach';
 import { startRecording, stopRecording, clearRecording } from './utils/sessionRecorder';
-import logoImg from './assets/logo.jpg';
+import logoImg from './assets/logo.png';
 
 const VIEWS = { WELCOME: 'welcome', PRACTICE: 'practice', SUMMARY: 'summary' };
 
