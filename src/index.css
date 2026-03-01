@@ -156,11 +156,11 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.2; letter-spacing: -0.
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
-  backdrop-filter: blur(12px);
-  transition: border-color var(--transition-normal);
+  box-shadow: var(--shadow-md);
+  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
-.card:hover { border-color: var(--border-active); }
+.card:hover { border-color: var(--border-active); box-shadow: var(--shadow-lg); }
 
 .card-title {
   font-size: var(--text-sm);
