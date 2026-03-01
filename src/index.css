@@ -775,7 +775,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.2; letter-spacing: -0.
 /* ─── Responsive ─── */
 @media (max-width: 1024px) {
   .split-screen { grid-template-columns: 1fr; }
-  .features { grid-template-columns: 1fr; }
+  .features { grid-template-columns: repeat(2, 1fr); }
   .segments-grid { grid-template-columns: repeat(3, 1fr); }
   .summary-grid { grid-template-columns: repeat(2, 1fr); }
 }
