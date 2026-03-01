@@ -7,6 +7,7 @@ import SessionSummary from './components/SessionSummary';
 import { comparePoses } from './utils/poseSimilarity';
 import { generateVoiceCue, setAudioCoachEnabled, resetAudioCoach, initVoices } from './utils/audioCoach';
 import { startRecording, stopRecording, clearRecording } from './utils/sessionRecorder';
+import logoImg from './assets/logo.jpg';
 
 const VIEWS = { WELCOME: 'welcome', PRACTICE: 'practice', SUMMARY: 'summary' };
 
@@ -190,11 +191,7 @@ export default function App() {
             {/* Header */}
             <header className="app-header">
                 <div className="logo">
-                    <div className="logo-icon">💃</div>
-                    <div>
-                        <div className="logo-text">DanceCoach AI</div>
-                        <div className="logo-tag">Real-Time Dance Feedback</div>
-                    </div>
+                    <img src={logoImg} alt="Improved.ai" className="logo-img" />
                 </div>
                 <nav className="nav">
                     <button
@@ -211,8 +208,8 @@ export default function App() {
             {/* ─── Welcome ─── */}
             {view === VIEWS.WELCOME && (
                 <div className="welcome fade-in" id="welcome">
-                    <div className="welcome-icon">💃</div>
-                    <h1 className="welcome-title">DanceCoach AI</h1>
+                    <img src={logoImg} alt="Improved.ai" className="welcome-logo" />
+                    <h1 className="welcome-title">Improved.ai</h1>
                     <p className="welcome-sub">
                         See yourself dance better — in real time. Upload any dance video, and our AI will
                         compare your movements body-part by body-part, showing you exactly where to improve.
